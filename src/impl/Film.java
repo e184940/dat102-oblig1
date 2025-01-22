@@ -1,5 +1,7 @@
 package impl;
 
+import java.util.Objects;
+
 public class Film {
 	private int filmnr;
 	private String produsent;
@@ -63,6 +65,24 @@ public class Film {
 	
 	public void setFilmselskap(String filmselskap) {
 		this.filmselskap = filmselskap;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(filmnr, filmselskap, lansering, produsent, tittel);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Film other = (Film) obj;
+		return filmnr == other.filmnr && Objects.equals(filmselskap, other.filmselskap) && lansering == other.lansering
+				&& Objects.equals(produsent, other.produsent) && Objects.equals(tittel, other.tittel);
 	}
 
 }
