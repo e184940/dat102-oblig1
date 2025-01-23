@@ -7,7 +7,7 @@ public class Film {
 	private String produsent;
 	private String tittel;
 	private int lansering;
-	//private enum SJANGER;
+	private Sjanger sjanger;
 	private String filmselskap;
 	
 	public Film() {
@@ -19,12 +19,13 @@ public class Film {
 	}
 	
 	public Film(
-			int filmnr, String produsent, String tittel, int lansering, String filmselskap) {
+			int filmnr, String produsent, String tittel, int lansering, String filmselskap, Sjanger sjanger) {
 		this.filmnr = filmnr;
 		this.produsent = produsent;
 		this.tittel = tittel;
 		this.lansering = lansering;
 		this.filmselskap = filmselskap;
+		this.sjanger = sjanger;
 	}
 	
 	public int getFilmnr() {
@@ -65,6 +66,10 @@ public class Film {
 	
 	public void setFilmselskap(String filmselskap) {
 		this.filmselskap = filmselskap;
+	}
+	
+	public Sjanger getSjanger() {
+		return sjanger;
 	}
 
 	@Override

@@ -1,5 +1,8 @@
 package adt;
 
+import impl.Film;
+import impl.Sjanger;
+
 public interface FilmarkivADT {
 	/**
 	 * Hente en film med gitt nr fra arkivet
