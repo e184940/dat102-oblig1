@@ -18,8 +18,7 @@ public class Film {
 		this.filmselskap = null;
 	}
 	
-	public Film(
-			int filmnr, String produsent, String tittel, int lansering, String filmselskap, Sjanger sjanger) {
+	public Film(int filmnr, String produsent, String tittel, int lansering, String filmselskap, Sjanger sjanger) {
 		this.filmnr = filmnr;
 		this.produsent = produsent;
 		this.tittel = tittel;
