@@ -10,6 +10,17 @@ public class Film {
 	private Sjanger sjanger;
 	private String filmselskap;
 	
+	@Override
+	public String toString() {
+	    return "Filmnummer: " + filmnr + "\n" +
+	           "Produsent: " + produsent + "\n" +
+	           "Tittel: " + tittel + "\n" +
+	           "År: " + lansering + "\n" +
+	           "Filmselskap: " + filmselskap + "\n" +
+	           "Sjanger: " + sjanger;
+	}
+
+	
 	public Film() {
 		this.filmnr = 0;
 		this.produsent = null;

@@ -1,8 +1,6 @@
 package impl;
 
 import adt.FilmarkivADT;
-import impl.Film;
-import impl.Sjanger;
 
 public class Filmarkiv implements FilmarkivADT {
 
@@ -24,7 +22,7 @@ public class Filmarkiv implements FilmarkivADT {
 		}
 		return null;
 	}
-
+	
 	@Override
 	public void leggTilFilm(Film nyFilm) {
 		if (antall == filmTabell.length) {
@@ -109,4 +107,5 @@ public class Filmarkiv implements FilmarkivADT {
 		}
 		return nytab;
 	}
+
 }
